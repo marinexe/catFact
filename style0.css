@@ -1,0 +1,168 @@
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+}
+#cc{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(212, 72%, 45%, 0.608);
+    font-family: "Bitcount Grid Double";
+    font-weight: 19800;
+    font-style: normal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    padding: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    user-select: none;
+  
+}   
+#btn{
+    height: 50%;
+    width: 60%;
+    background-color: hsl(0, 0%, 100%);
+    color: hsla(212, 72%, 45%, 0.608);
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.5s;
+    border: none;
+    font-size: 3rem;
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Bitcount Grid Double";
+    font-weight: 9800;
+
+   
+}
+#btn:focus{
+ border: none;
+
+}
+#btn:hover{
+    transform: translateY(10px);
+}
+#btn:active{
+    transform: translateY(-5px);
+}
+#cont{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+
+}
+#factc{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    top:0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+@media (max-width: 575.98px) {
+ #cont{
+    font-size: 2rem;
+ }
+ #btn.clicked{
+    height: 70px;
+    border-radius: 10px;
+ }
+ #btn{
+    font-size: 2rem;
+ }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ #cont{
+    font-size: 2rem;
+ }
+ #btn.clicked{
+    height:70px ;
+    width: 200px ;
+    border-radius: 10px;
+ }
+}
+@media(max-width:100px){
+    #btn.clicked{
+    height:100px;
+    width:220px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+ #cont{
+    font-size: 2.5rem;
+ }
+ #btn.clicked{
+    height:100px;
+    width:220px;
+    border-radius: 20px;
+    font-size: 2rem !important;
+   
+ }
+ 
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ #cont{
+    font-size: 4rem !important;
+ }
+ #btn.clicked{
+    height: 120px;
+    width:370px;
+    border-radius:20px;
+    font-size: 3rem !important;
+ }
+}
+
+
+@media (min-width: 1200px) {
+    #cont{
+        font-size: 2.5rem;
+    }
+    #btn.clicked{
+        height:120px;
+        width:370px;
+        border-radius:20px;
+        font-size: 3rem !important;
+    }
+
+}
+@media(min-width:1601px){
+     #cont{
+        font-size: 4rem !important;
+     }
+}
+@media(min-width:3000px){
+   #cont{
+    font-size: 7rem;
+   }
+   #btn.clicked{
+    height:200px;
+    width:500px;
+
+   }
+   #btn{
+    font-size: 5rem ;
+   }
+}
